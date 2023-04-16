@@ -455,7 +455,7 @@ body {
   -ms-flex-direction: column;
   flex-direction: column;
   min-height: 100%;
-  background-color: #ffffff;
+  background-color: #f9fbfd;
 }
 
 a {
@@ -1492,6 +1492,47 @@ button,
   margin-right: 0;
 }
 
+.desc__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 112px 0 143px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: minmax(324px, 512px) minmax(324px, 560px);
+  grid-template-columns: minmax(324px, 512px) minmax(324px, 560px);
+  -webkit-column-gap: 88px;
+  -moz-column-gap: 88px;
+  column-gap: 88px;
+}
+
+.desc__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.desc__heading {
+  margin: 0 0 26px;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.desc__text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1546,6 +1587,12 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .leading {
     background: #002f67 url("../img/main-background-desctop@2x.jpg") no-repeat center/cover;
+  }
+}
+
+@media (min-width: 1024px) {
+  .desc__heading br {
+    display: none;
   }
 }
 
@@ -1625,6 +1672,19 @@ button,
   .social__network-item svg {
     width: 16px;
     height: 16px;
+  }
+
+  .desc__wrapper {
+    padding: 100px 0 94px;
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .desc__heading {
+    margin: -9px 0 15px;
+    font-size: 26px;
+    line-height: 1.4;
   }
 }
 
@@ -1865,6 +1925,18 @@ button,
 
   .social__network-item {
     margin-right: 20px;
+  }
+
+  .desc__wrapper {
+    padding: 58px 0 87px;
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 43px;
+  }
+
+  .desc__heading {
+    margin: 0 0 15px -1px;
+    font-size: 24px;
   }
 }
 
