@@ -1586,6 +1586,69 @@ button,
   line-height: 1.4;
 }
 
+.products__wrapper {
+  max-width: 1130px;
+  margin: 0 auto;
+  padding: 86px 0 119px;
+}
+
+.products__heading {
+  margin: 0 0 49px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.products__cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(260px, 309px))[4];
+  grid-template-columns: repeat(4, minmax(260px, 309px));
+  gap: 30px;
+}
+
+.products-card {
+  min-height: 386px;
+  color: #f9fbfd;
+  padding: 29px 11px 12px 25px;
+}
+
+.products-card__heading {
+  margin: 0 0 14px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.products-card__list {
+  margin: 0;
+}
+
+.products-card__terminology {
+  margin: 0 0 2px;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.products-card__definition {
+  margin: 0 0 11px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+.products-card--astoria {
+  background: #011c40 url("../img/product/Astoria-desctop.jpg") no-repeat center/cover;
+}
+
+.products-card--elaine {
+  background: #011c40 url("../img/product/Astoria-desctop.jpg") no-repeat center/cover;
+}
+
 /* @mixin hover-focus {
     @media (hover: hover) {
       &:hover:not(.focus-visible) {
@@ -1644,6 +1707,14 @@ button,
 
   .advantages {
     background: #d9e6f4 url("../img/Advantages-desctop@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--astoria {
+    background: #011c40 url("../img/products/Astoria-desctop@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--elaine {
+    background: #011c40 url("../img/products/Astoria-desctop@2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -1779,6 +1850,14 @@ button,
   .advantage-card__title {
     line-height: 1.4;
   }
+
+  .products-card--astoria {
+    background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
+  }
+
+  .products-card--elaine {
+    background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
@@ -1788,6 +1867,14 @@ button,
 
   .advantages {
     background: #d9e6f4 url("../img/Advantages-tablet@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--astoria {
+    background: #011c40 url("../img/products/Astoria-tablet@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--elaine {
+    background: #011c40 url("../img/products/Astoria-tablet@2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -2059,6 +2146,14 @@ button,
     min-height: 250px;
     padding: 24px 20px 10px 20px;
   }
+
+  .products-card--astoria {
+    background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
+  }
+
+  .products-card--elaine {
+    background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2131,6 +2226,14 @@ button,
 
   .advantages {
     background: #d9e6f4 url("../img/Advantages-mobil@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--astoria {
+    background: #011c40 url("../img/products/Astoria-mobil@2x.jpg") no-repeat center/cover;
+  }
+
+  .products-card--elaine {
+    background: #011c40 url("../img/products/Astoria-mobil@2x.jpg") no-repeat center/cover;
   }
 }
 
