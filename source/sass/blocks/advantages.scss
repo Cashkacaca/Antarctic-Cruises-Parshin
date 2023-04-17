@@ -1,0 +1,75 @@
+.advantages {
+  background: #d9e6f4 url("../img/Advantages-desctop.jpg") no-repeat center / cover;
+
+  @include retina {
+    @include vp-767 {
+      background: #d9e6f4 url("../img/Advantages-mobil@2x.jpg") no-repeat center / cover;
+    }
+
+    @include vp-1023 {
+      background: #d9e6f4 url("../img/Advantages-tablet@2x.jpg") no-repeat center / cover;
+    }
+
+    @media (min-width: $vp-1024) {
+      background: #d9e6f4 url("../img/Advantages-desctop@2x.jpg") no-repeat center / cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: #d9e6f4 url("../img/Advantages-tablet.jpg") no-repeat center / cover;
+  }
+
+  @include vp-767 {
+    background: #d9e6f4 url("../img/Advantages-mobil.jpg") no-repeat center / cover;
+  }
+}
+
+.advantages__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 110px 0 119px;
+
+  @include vp-1023 {
+    padding: 90px 0 100px;
+  }
+
+  @include vp-767 {
+    padding: 57px 0 64px;
+  }
+}
+
+.advantages__heading {
+  margin: 0 0 49px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+}
+
+.advantages__cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+
+  display: grid;
+  grid-template-columns: repeat(3, minmax(206px, 360px));
+  column-gap: 40px;
+
+  @include vp-1023 {
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+}

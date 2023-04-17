@@ -1495,7 +1495,7 @@ button,
 .desc__wrapper {
   max-width: 1160px;
   margin: 0 auto;
-  padding: 112px 0 143px;
+  padding: 112px 0 145px;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: minmax(324px, 512px) minmax(324px, 560px);
@@ -1531,6 +1531,59 @@ button,
   margin: 0;
   font-size: 16px;
   line-height: 1.5;
+}
+
+.advantages {
+  background: #d9e6f4 url("../img/Advantages-desctop.jpg") no-repeat center/cover;
+}
+
+.advantages__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 110px 0 119px;
+}
+
+.advantages__heading {
+  margin: 0 0 49px;
+  text-align: center;
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.5;
+}
+
+.advantages__cards {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(206px, 360px))[3];
+  grid-template-columns: repeat(3, minmax(206px, 360px));
+  -webkit-column-gap: 40px;
+  -moz-column-gap: 40px;
+  column-gap: 40px;
+}
+
+.advantage-card {
+  min-height: 241px;
+  padding: 30px;
+  background-color: #f9fbfd;
+}
+
+.advantage-card__icon {
+  margin-bottom: 12px;
+}
+
+.advantage-card__title {
+  margin: 0 0 10px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.advantage-card__description {
+  margin: 0;
+  line-height: 1.4;
 }
 
 /* @mixin hover-focus {
@@ -1588,10 +1641,18 @@ button,
   .leading {
     background: #002f67 url("../img/main-background-desctop@2x.jpg") no-repeat center/cover;
   }
+
+  .advantages {
+    background: #d9e6f4 url("../img/Advantages-desctop@2x.jpg") no-repeat center/cover;
+  }
 }
 
 @media (min-width: 1024px) {
   .desc__heading br {
+    display: none;
+  }
+
+  .advantage-card__title br {
     display: none;
   }
 }
@@ -1675,7 +1736,7 @@ button,
   }
 
   .desc__wrapper {
-    padding: 100px 0 94px;
+    padding: 100px 0 93px;
     -webkit-column-gap: 30px;
     -moz-column-gap: 30px;
     column-gap: 30px;
@@ -1686,11 +1747,47 @@ button,
     font-size: 26px;
     line-height: 1.4;
   }
+
+  .advantages {
+    background: #d9e6f4 url("../img/Advantages-tablet.jpg") no-repeat center/cover;
+  }
+
+  .advantages__wrapper {
+    padding: 90px 0 100px;
+  }
+
+  .advantages__heading {
+    font-size: 26px;
+  }
+
+  .advantages__cards {
+    -webkit-column-gap: 30px;
+    -moz-column-gap: 30px;
+    column-gap: 30px;
+  }
+
+  .advantage-card {
+    min-height: 310px;
+    padding: 26px 10px 10px 20px;
+  }
+
+  .advantage-card__icon svg {
+    width: 36px;
+    height: 26px;
+  }
+
+  .advantage-card__title {
+    line-height: 1.4;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
   .leading {
     background: #002f67 url("../img/main-background-tablet@2x.jpg") no-repeat center/cover;
+  }
+
+  .advantages {
+    background: #d9e6f4 url("../img/Advantages-tablet@2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -1928,7 +2025,7 @@ button,
   }
 
   .desc__wrapper {
-    padding: 58px 0 87px;
+    padding: 58px 0 86px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 43px;
@@ -1937,6 +2034,30 @@ button,
   .desc__heading {
     margin: 0 0 15px -1px;
     font-size: 24px;
+  }
+
+  .advantages {
+    background: #d9e6f4 url("../img/Advantages-mobil.jpg") no-repeat center/cover;
+  }
+
+  .advantages__wrapper {
+    padding: 57px 0 64px;
+  }
+
+  .advantages__heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .advantages__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+    row-gap: 30px;
+  }
+
+  .advantage-card {
+    min-height: 250px;
+    padding: 24px 20px 10px 20px;
   }
 }
 
@@ -2006,6 +2127,10 @@ button,
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .leading {
     background: #002f67 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
+  }
+
+  .advantages {
+    background: #d9e6f4 url("../img/Advantages-mobil@2x.jpg") no-repeat center/cover;
   }
 }
 
