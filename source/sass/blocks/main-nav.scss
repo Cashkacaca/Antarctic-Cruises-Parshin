@@ -91,7 +91,7 @@
       width: 24px;
       height: 2px;
       background-color: $color-white-text;
-      box-shadow: 0 6px 0 0$color-white-text, 0 12px 0 0$color-white-text;
+      box-shadow: 0 6px 0 0 $color-white-text, 0 12px 0 0 $color-white-text;
     }
   }
 }
@@ -118,7 +118,6 @@
 
 .main-nav--opened .main-nav__toggle {
   @include vp-767 {
-
     &::before,
     &::after {
       content: "";
