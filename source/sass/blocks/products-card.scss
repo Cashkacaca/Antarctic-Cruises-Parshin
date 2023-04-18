@@ -1,7 +1,37 @@
 .products-card {
   min-height: 386px;
   color: $color-white-text;
-  padding: 29px 11px 12px 25px;
+  padding: 29px 23px 30px 25px;
+  position: relative;
+
+  background: $color-text url("../img/products/Astoria-desctop.jpg") no-repeat center / cover;
+
+  @include retina {
+    @include vp-767 {
+      background: $color-text url("../img/products/Astoria-mobil@2x.jpg") no-repeat center / cover;
+    }
+
+    @include vp-1023 {
+      background: $color-text url("../img/products/Astoria-tablet@2x.jpg") no-repeat center / cover;
+    }
+
+    @media (min-width: $vp-1024) {
+      background: $color-text url("../img/products/Astoria-desctop@2x.jpg") no-repeat center / cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: $color-text url("../img/products/Astoria-tablet.jpg") no-repeat center / cover;
+  }
+
+  @include vp-767 {
+    background: $color-text url("../img/products/Astoria-mobil.jpg") no-repeat center / cover;
+  }
+
+  &:focus,
+  &:hover {
+    background-image: none;
+  }
 }
 
 .products-card__heading {
@@ -9,10 +39,25 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+
+  position: absolute;
+  left: 30px;
+  bottom: 8px;
+}
+
+.products-card:focus .products-card__heading,
+.products-card:hover .products-card__heading {
+  position: static;
 }
 
 .products-card__list {
   margin: 0;
+  display: none;
+}
+
+.products-card:focus .products-card__list,
+.products-card:hover .products-card__list {
+  display: block;
 }
 
 .products-card__terminology {
@@ -26,60 +71,166 @@
   margin: 0 0 11px;
   font-weight: 500;
   line-height: 1.4;
+
+  &:last-of-type {
+    margin-bottom: 49px;
+  }
 }
 
-.products-card--astoria {
-  // background: $color-text url("../img/products/Astoria-desctop.jpg") no-repeat center / cover;
-  background: $color-text url("../img/product/Astoria-desctop.jpg") no-repeat center / cover;
+/* Фоновые изображения карточек круизов*/
 
+.products-card--atlantis {
+  background-image: url("../img/products/Atlantis-desctop.jpg");
 
   @include retina {
     @include vp-767 {
-      background: $color-text url("../img/products/Astoria-mobil@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Atlantis-mobil@2x.jpg");
     }
 
     @include vp-1023 {
-      background: $color-text url("../img/products/Astoria-tablet@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Atlantis-tablet@2x.jpg");
     }
 
     @media (min-width: $vp-1024) {
-      background: $color-text url("../img/products/Astoria-desctop@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Atlantis-desctop@2x.jpg");
     }
   }
 
   @include vp-1023 {
-    background: $color-text url("../img/products/Astoria-tablet.jpg") no-repeat center / cover;
+    background-image: url("../img/products/Atlantis-tablet.jpg");
   }
 
   @include vp-767 {
-    background: $color-text url("../img/products/Astoria-mobil.jpg") no-repeat center / cover;
+    background-image: url("../img/products/Atlantis-mobil.jpg");
   }
 }
 
-.products-card--elaine {
-  // background: $color-text url("../img/products/Astoria-desctop.jpg") no-repeat center / cover;
-  background: $color-text url("../img/product/Astoria-desctop.jpg") no-repeat center / cover;
-
+.products-card--odyssey {
+  background-image: url("../img/products/Odyssey-desctop.jpg");
 
   @include retina {
     @include vp-767 {
-      background: $color-text url("../img/products/Astoria-mobil@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Odyssey-mobil@2x.jpg");
     }
 
     @include vp-1023 {
-      background: $color-text url("../img/products/Astoria-tablet@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Odyssey-tablet@2x.jpg");
     }
 
     @media (min-width: $vp-1024) {
-      background: $color-text url("../img/products/Astoria-desctop@2x.jpg") no-repeat center / cover;
+      background-image: url("../img/products/Odyssey-desctop@2x.jpg");
     }
   }
 
   @include vp-1023 {
-    background: $color-text url("../img/products/Astoria-tablet.jpg") no-repeat center / cover;
+    background-image: url("../img/products/Odyssey-tablet.jpg");
   }
 
   @include vp-767 {
-    background: $color-text url("../img/products/Astoria-mobil.jpg") no-repeat center / cover;
+    background-image: url("../img/products/Odyssey-mobil.jpg");
+  }
+}
+
+.products-card--olympia {
+  background-image: url("../img/products/Olympia-desctop.jpg");
+
+  @include retina {
+    @include vp-767 {
+      background-image: url("../img/products/Olympia-mobil@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/products/Olympia-tablet@2x.jpg");
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/products/Olympia-desctop@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/products/Olympia-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/products/Olympia-mobil.jpg");
+  }
+}
+
+.products-card--aurora {
+  background-image: url("../img/products/Aurora-desctop.jpg");
+
+  @include retina {
+    @include vp-767 {
+      background-image: url("../img/products/Aurora-mobil@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/products/Aurora-tablet@2x.jpg");
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/products/Aurora-desctop@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/products/Aurora-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/products/Aurora-mobil.jpg");
+  }
+}
+
+.products-card--leonor {
+  background-image: url("../img/products/Leonor-desctop.jpg");
+
+  @include retina {
+    @include vp-767 {
+      background-image: url("../img/products/Leonor-mobil@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/products/Leonor-tablet@2x.jpg");
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/products/Leonor-desctop@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/products/Leonor-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/products/Leonor-mobil.jpg");
+  }
+}
+
+.products-card--minion-1 {
+  background-image: url("../img/products/Minion-1-desctop.jpg");
+
+  @include retina {
+    @include vp-767 {
+      background-image: url("../img/products/Minion-1-mobil@2x.jpg");
+    }
+
+    @include vp-1023 {
+      background-image: url("../img/products/Minion-1-tablet@2x.jpg");
+    }
+
+    @media (min-width: $vp-1024) {
+      background-image: url("../img/products/Minion-1-desctop@2x.jpg");
+    }
+  }
+
+  @include vp-1023 {
+    background-image: url("../img/products/Minion-1-tablet.jpg");
+  }
+
+  @include vp-767 {
+    background-image: url("../img/products/Minion-1-mobil.jpg");
   }
 }

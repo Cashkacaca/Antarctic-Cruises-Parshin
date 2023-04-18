@@ -679,6 +679,27 @@ button,
   opacity: 0.8;
 }
 
+.btn--products-card {
+  display: none;
+}
+
+.products-card:focus .btn--products-card,
+.products-card:hover .btn--products-card {
+  width: calc(100% - 50px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  background-color: #f9fbfd;
+  font-weight: 600;
+  line-height: 1.5;
+  color: #011c40;
+  position: absolute;
+  bottom: 34px;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1589,7 +1610,7 @@ button,
 .products__wrapper {
   max-width: 1130px;
   margin: 0 auto;
-  padding: 86px 0 119px;
+  padding: 86px 0 104px;
 }
 
 .products__heading {
@@ -1614,7 +1635,14 @@ button,
 .products-card {
   min-height: 386px;
   color: #f9fbfd;
-  padding: 29px 11px 12px 25px;
+  padding: 29px 23px 30px 25px;
+  position: relative;
+  background: #011c40 url("../img/products/Astoria-desctop.jpg") no-repeat center/cover;
+}
+
+.products-card:focus,
+.products-card:hover {
+  background-image: none;
 }
 
 .products-card__heading {
@@ -1622,10 +1650,24 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+  position: absolute;
+  left: 30px;
+  bottom: 8px;
+}
+
+.products-card:focus .products-card__heading,
+.products-card:hover .products-card__heading {
+  position: static;
 }
 
 .products-card__list {
   margin: 0;
+  display: none;
+}
+
+.products-card:focus .products-card__list,
+.products-card:hover .products-card__list {
+  display: block;
 }
 
 .products-card__terminology {
@@ -1641,12 +1683,38 @@ button,
   line-height: 1.4;
 }
 
-.products-card--astoria {
-  background: #011c40 url("../img/product/Astoria-desctop.jpg") no-repeat center/cover;
+.products-card__definition:last-of-type {
+  margin-bottom: 49px;
 }
 
-.products-card--elaine {
-  background: #011c40 url("../img/product/Astoria-desctop.jpg") no-repeat center/cover;
+/* Фоновые изображения карточек круизов*/
+
+.products-card--atlantis {
+  background-image: url("../img/products/Atlantis-desctop.jpg");
+}
+
+.products-card--odyssey {
+  background-image: url("../img/products/Odyssey-desctop.jpg");
+}
+
+.products-card--olympia {
+  background-image: url("../img/products/Olympia-desctop.jpg");
+}
+
+.products-card--aurora {
+  background-image: url("../img/products/Aurora-desctop.jpg");
+}
+
+.products-card--leonor {
+  background-image: url("../img/products/Leonor-desctop.jpg");
+}
+
+.products-card--minion-1 {
+  background-image: url("../img/products/Minion-1-desctop.jpg");
+}
+
+.feedback {
+  background-color: #c3e5fb;
 }
 
 /* @mixin hover-focus {
@@ -1709,12 +1777,32 @@ button,
     background: #d9e6f4 url("../img/Advantages-desctop@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--astoria {
+  .products-card {
     background: #011c40 url("../img/products/Astoria-desctop@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--elaine {
-    background: #011c40 url("../img/products/Astoria-desctop@2x.jpg") no-repeat center/cover;
+  .products-card--atlantis {
+    background-image: url("../img/products/Atlantis-desctop@2x.jpg");
+  }
+
+  .products-card--odyssey {
+    background-image: url("../img/products/Odyssey-desctop@2x.jpg");
+  }
+
+  .products-card--olympia {
+    background-image: url("../img/products/Olympia-desctop@2x.jpg");
+  }
+
+  .products-card--aurora {
+    background-image: url("../img/products/Aurora-desctop@2x.jpg");
+  }
+
+  .products-card--leonor {
+    background-image: url("../img/products/Leonor-desctop@2x.jpg");
+  }
+
+  .products-card--minion-1 {
+    background-image: url("../img/products/Minion-1-desctop@2x.jpg");
   }
 }
 
@@ -1851,12 +1939,32 @@ button,
     line-height: 1.4;
   }
 
-  .products-card--astoria {
+  .products-card {
     background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
   }
 
-  .products-card--elaine {
-    background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
+  .products-card--atlantis {
+    background-image: url("../img/products/Atlantis-tablet.jpg");
+  }
+
+  .products-card--odyssey {
+    background-image: url("../img/products/Odyssey-tablet.jpg");
+  }
+
+  .products-card--olympia {
+    background-image: url("../img/products/Olympia-tablet.jpg");
+  }
+
+  .products-card--aurora {
+    background-image: url("../img/products/Aurora-tablet.jpg");
+  }
+
+  .products-card--leonor {
+    background-image: url("../img/products/Leonor-tablet.jpg");
+  }
+
+  .products-card--minion-1 {
+    background-image: url("../img/products/Minion-1-tablet.jpg");
   }
 }
 
@@ -1869,12 +1977,32 @@ button,
     background: #d9e6f4 url("../img/Advantages-tablet@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--astoria {
+  .products-card {
     background: #011c40 url("../img/products/Astoria-tablet@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--elaine {
-    background: #011c40 url("../img/products/Astoria-tablet@2x.jpg") no-repeat center/cover;
+  .products-card--atlantis {
+    background-image: url("../img/products/Atlantis-tablet@2x.jpg");
+  }
+
+  .products-card--odyssey {
+    background-image: url("../img/products/Odyssey-tablet@2x.jpg");
+  }
+
+  .products-card--olympia {
+    background-image: url("../img/products/Olympia-tablet@2x.jpg");
+  }
+
+  .products-card--aurora {
+    background-image: url("../img/products/Aurora-tablet@2x.jpg");
+  }
+
+  .products-card--leonor {
+    background-image: url("../img/products/Leonor-tablet@2x.jpg");
+  }
+
+  .products-card--minion-1 {
+    background-image: url("../img/products/Minion-1-tablet@2x.jpg");
   }
 }
 
@@ -2147,12 +2275,32 @@ button,
     padding: 24px 20px 10px 20px;
   }
 
-  .products-card--astoria {
+  .products-card {
     background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
   }
 
-  .products-card--elaine {
-    background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
+  .products-card--atlantis {
+    background-image: url("../img/products/Atlantis-mobil.jpg");
+  }
+
+  .products-card--odyssey {
+    background-image: url("../img/products/Odyssey-mobil.jpg");
+  }
+
+  .products-card--olympia {
+    background-image: url("../img/products/Olympia-mobil.jpg");
+  }
+
+  .products-card--aurora {
+    background-image: url("../img/products/Aurora-mobil.jpg");
+  }
+
+  .products-card--leonor {
+    background-image: url("../img/products/Leonor-mobil.jpg");
+  }
+
+  .products-card--minion-1 {
+    background-image: url("../img/products/Minion-1-mobil.jpg");
   }
 }
 
@@ -2228,12 +2376,32 @@ button,
     background: #d9e6f4 url("../img/Advantages-mobil@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--astoria {
+  .products-card {
     background: #011c40 url("../img/products/Astoria-mobil@2x.jpg") no-repeat center/cover;
   }
 
-  .products-card--elaine {
-    background: #011c40 url("../img/products/Astoria-mobil@2x.jpg") no-repeat center/cover;
+  .products-card--atlantis {
+    background-image: url("../img/products/Atlantis-mobil@2x.jpg");
+  }
+
+  .products-card--odyssey {
+    background-image: url("../img/products/Odyssey-mobil@2x.jpg");
+  }
+
+  .products-card--olympia {
+    background-image: url("../img/products/Olympia-mobil@2x.jpg");
+  }
+
+  .products-card--aurora {
+    background-image: url("../img/products/Aurora-mobil@2x.jpg");
+  }
+
+  .products-card--leonor {
+    background-image: url("../img/products/Leonor-mobil@2x.jpg");
+  }
+
+  .products-card--minion-1 {
+    background-image: url("../img/products/Minion-1-mobil@2x.jpg");
   }
 }
 
