@@ -1650,6 +1650,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+  color: #c3e5fb;
   position: absolute;
   left: 30px;
   bottom: 8px;
@@ -1658,6 +1659,7 @@ button,
 .products-card:focus .products-card__heading,
 .products-card:hover .products-card__heading {
   position: static;
+  color: #f9fbfd;
 }
 
 .products-card__list {
@@ -1827,6 +1829,11 @@ button,
     padding: 0 45px;
   }
 
+  .products-card:focus .btn--products-card,
+  .products-card:hover .btn--products-card {
+    width: calc(100% - 70px);
+  }
+
   .page-header__inner {
     padding: 28px 0;
   }
@@ -1939,8 +1946,32 @@ button,
     line-height: 1.4;
   }
 
+  .products__wrapper {
+    padding: 90px 15px 83px;
+  }
+
+  .products__heading {
+    font-size: 26px;
+  }
+
+  .products__cards {
+    -ms-grid-columns: (minmax(260px, 309px))[2];
+    grid-template-columns: repeat(2, minmax(260px, 309px));
+  }
+
   .products-card {
+    padding-left: 35px;
     background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
+  }
+
+  .products-card__heading {
+    left: 35px;
+    bottom: 13px;
+  }
+
+  .products-card__heading {
+    left: 25px;
+    bottom: 3px;
   }
 
   .products-card--atlantis {
@@ -2013,6 +2044,11 @@ button,
 
   .container {
     padding: 0 16px;
+  }
+
+  .products-card:focus .btn--products-card,
+  .products-card:hover .btn--products-card {
+    width: calc(100% - 50px);
   }
 
   .modal__wrapper {
@@ -2275,7 +2311,22 @@ button,
     padding: 24px 20px 10px 20px;
   }
 
+  .products__wrapper {
+    padding: 57px 9px 48px;
+  }
+
+  .products__heading {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
+
+  .products__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+
   .products-card {
+    padding-left: 25px;
     background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
   }
 

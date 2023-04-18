@@ -41,4 +41,12 @@
 
   position: absolute;
   bottom: 34px;
+
+  @include vp-1023 {
+    width: calc(100% - 70px);
+  }
+
+  @include vp-767 {
+    width: calc(100% - 50px);
+  }
 }

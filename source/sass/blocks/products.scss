@@ -2,6 +2,14 @@
   max-width: 1130px;
   margin: 0 auto;
   padding: 86px 0 104px;
+
+  @include vp-1023 {
+    padding: 90px 15px 83px;
+  }
+
+  @include vp-767 {
+    padding: 57px 9px 48px;
+  }
 }
 
 .products__heading {
@@ -10,6 +18,15 @@
   font-weight: 600;
   font-size: 28px;
   line-height: 1.5;
+
+  @include vp-1023 {
+    font-size: 26px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 30px;
+    font-size: 24px;
+  }
 }
 
 .products__cards {
@@ -20,4 +37,12 @@
   display: grid;
   grid-template-columns: repeat(4, minmax(260px, 309px));
   gap: 30px;
+
+  @include vp-1023 {
+    grid-template-columns: repeat(2, minmax(260px, 309px));
+  }
+
+  @include vp-767 {
+    grid-template-columns: 1fr;
+  }
 }
