@@ -302,55 +302,59 @@
 
       <section class="feedback container">
         <div class="feedback__wrapper">
-          <h2 class="feedback__heading">Раннее бронирование</h2>
-          <p class="feedback__text">Забронируйте тур за&nbsp;3&ndash;6&nbsp;месяцев до&nbsp;даты выезда
-            и&nbsp;сэкономьте до&nbsp;50%</p>
+          <div class="feedback__text-wrap">
+            <h2 class="feedback__heading">Раннее бронирование</h2>
+            <p class="feedback__text">Забронируйте тур <span>за&nbsp;3&ndash;6&nbsp;месяцев<br> до&nbsp;даты
+                выезда</span> и&nbsp;сэкономьте до&nbsp;50%</p>
+          </div>
 
-          <form class="feedback__form form" action="https://echo.htmlacademy.ru/" method="post">
-            <fieldset class="form__fie__headingldset">
+          <div class="feedback__form-wrap">
+            <form class="form" action="https://echo.htmlacademy.ru/" method="post">
+              <fieldset class="form__fieldset">
 
-              <p class="form__description">Мы проконсультируем Вас бесплатно</p>
+                <p class="form__description">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
 
-              <ul class="form__list">
+                <ul class="form__list">
 
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="visually-hidden">Имя</span>
-                    <input type="text" name="name" placeholder="Имя">
-                  </label>
-                </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <span class="visually-hidden">Имя</span>
+                      <input type="text" name="name" placeholder="Имя">
+                    </label>
+                  </li>
 
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="visually-hidden">Телефон</span>
-                    <input type="tel" name="phone" placeholder="Телефон">
-                  </label>
-                </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <span class="visually-hidden">Телефон</span>
+                      <input type="tel" name="phone" placeholder="Телефон">
+                    </label>
+                  </li>
 
-                <li class="form__item">
-                  <label class="form__label">
-                    <span class="visually-hidden">Email</span>
-                    <input type="email" name="email" placeholder="Email">
-                  </label>
-                </li>
+                  <li class="form__item">
+                    <label class="form__label">
+                      <span class="visually-hidden">Email</span>
+                      <input type="email" name="email" placeholder="Email">
+                    </label>
+                  </li>
 
-                <li class="form__item form__item--checkbox" data-validate-type="checkbox">
-                  <label class="form__label">
-                    <input type="checkbox" name="consent" value="consent" checked>
-                    <span>Я согласен на обработку моих персональных данных</span>
-                    <svg width="10" height="6">
-                      <use xlink:href="img/sprite.svg#chekbox-arrow"></use>
-                    </svg>
-                  </label>
-                </li>
+                  <li class="form__item form__item--checkbox" data-validate-type="checkbox">
+                    <label class="form__label">
+                      <input type="checkbox" name="consent" value="consent" checked>
+                      <span>Я согласен на обработку моих персональных данных</span>
+                      <svg width="10" height="6">
+                        <use xlink:href="img/sprite.svg#chekbox-arrow"></use>
+                      </svg>
+                    </label>
+                  </li>
 
-                <li class="form__item form__item--button">
-                  <button class="btn btn--form" type="submit">Оставить заявку</button>
-                </li>
+                  <li class="form__item form__item--button">
+                    <button class="btn btn--form" type="submit">Оставить заявку</button>
+                  </li>
 
-              </ul>
-            </fieldset>
-          </form>
+                </ul>
+              </fieldset>
+            </form>
+          </div>
 
         </div>
       </section>

@@ -1,3 +1,55 @@
 .feedback {
-  background-color: #c3e5fb;
+  background: #c3e5fb url("../img/form-background-desctop.jpg") no-repeat center / cover;
+
+  @include retina {
+    @include vp-767 {
+      background: #c3e5fb url("../img/form-background-mobil@2x.jpg") no-repeat center / cover;
+    }
+
+    @include vp-1023 {
+      background: #c3e5fb url("../img/form-background-tablet@2x.jpg") no-repeat center / cover;
+    }
+
+    @media (min-width: $vp-1024) {
+      background: #c3e5fb url("../img/form-background-desctop@2x.jpg") no-repeat center / cover;
+    }
+  }
+
+  @include vp-1023 {
+    background: #c3e5fb url("../img/form-background-tablet.jpg") no-repeat center / cover;
+  }
+
+  @include vp-767 {
+    background: #c3e5fb url("../img/form-background-mobil.jpg") no-repeat center / cover;
+  }
+}
+
+.feedback__wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feedback__text-wrap {
+  margin-bottom: 6px;
+  align-self: center;
+}
+
+.feedback__heading {
+  margin: 0 0 11px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.feedback__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.feedback__form-wrap {
+  grid-column: -1 / -2;
+  justify-self: end;
 }

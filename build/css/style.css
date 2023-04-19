@@ -700,6 +700,21 @@ button,
   bottom: 34px;
 }
 
+.btn--form {
+  width: calc(100% - 12px);
+  padding: 11px 20px;
+  background-color: #f9fbfd;
+  color: #011c40;
+  font-weight: 600;
+  line-height: 1.5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
 .modal {
   position: fixed;
   top: 0;
@@ -1610,7 +1625,7 @@ button,
 .products__wrapper {
   max-width: 1130px;
   margin: 0 auto;
-  padding: 86px 0 104px;
+  padding: 86px 0 120px;
 }
 
 .products__heading {
@@ -1716,7 +1731,167 @@ button,
 }
 
 .feedback {
-  background-color: #c3e5fb;
+  background: #c3e5fb url("../img/form-background-desctop.jpg") no-repeat center/cover;
+}
+
+.feedback__wrapper {
+  max-width: 1040px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.feedback__text-wrap {
+  margin-bottom: 6px;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+}
+
+.feedback__heading {
+  margin: 0 0 11px;
+  font-size: 40px;
+  line-height: 1.5;
+}
+
+.feedback__text {
+  margin: 0;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.feedback__form-wrap {
+  grid-column: -1/-2;
+  -ms-grid-column-align: end;
+  justify-self: end;
+}
+
+.form {
+  width: 403px;
+  padding: 45px 38px 50px 50px;
+  background-color: #011c40;
+  -webkit-box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  box-shadow: 0px 4px 45px rgba(1, 28, 64, 0.15);
+  color: #f9fbfd;
+}
+
+.form__fieldset {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.form__description {
+  margin: 0 0 26px;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.form__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.form__item {
+  margin-bottom: 20px;
+}
+
+.form__item:last-of-type {
+  margin-bottom: 0;
+}
+
+.form__item--checkbox {
+  margin: -3px 0 27px;
+  position: relative;
+  padding-left: 23px;
+}
+
+.form__label span {
+  font-size: 10px;
+  line-height: 1.3;
+}
+
+.form__label input {
+  width: calc(100% - 12px);
+  padding: 13px 16px 14px;
+  border: none;
+  background-color: #f9fbfd;
+}
+
+.form__label input::-webkit-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__label input::-moz-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__label input:-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__label input::-ms-input-placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__label input::placeholder {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.5;
+  color: rgba(1, 28, 64, 0.7);
+}
+
+.form__item--checkbox input {
+  margin: auto 0;
+  width: 18px;
+  height: 18px;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.form__item--checkbox svg {
+  display: none;
+}
+
+.form__item--checkbox input:checked ~ svg {
+  display: block;
+  position: absolute;
+  left: 4px;
+  top: 10px;
+  bottom: 0;
 }
 
 /* @mixin hover-focus {
@@ -1805,6 +1980,10 @@ button,
 
   .products-card--minion-1 {
     background-image: url("../img/products/Minion-1-desctop@2x.jpg");
+  }
+
+  .feedback {
+    background: #c3e5fb url("../img/form-background-desctop@2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -1997,6 +2176,10 @@ button,
   .products-card--minion-1 {
     background-image: url("../img/products/Minion-1-tablet.jpg");
   }
+
+  .feedback {
+    background: #c3e5fb url("../img/form-background-tablet.jpg") no-repeat center/cover;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 1023px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 1023px), (min-resolution: 144dpi) and (max-width: 1023px), (min-resolution: 1.5dppx) and (max-width: 1023px) {
@@ -2034,6 +2217,10 @@ button,
 
   .products-card--minion-1 {
     background-image: url("../img/products/Minion-1-tablet@2x.jpg");
+  }
+
+  .feedback {
+    background: #c3e5fb url("../img/form-background-tablet@2x.jpg") no-repeat center/cover;
   }
 }
 
@@ -2353,6 +2540,10 @@ button,
   .products-card--minion-1 {
     background-image: url("../img/products/Minion-1-mobil.jpg");
   }
+
+  .feedback {
+    background: #c3e5fb url("../img/form-background-mobil.jpg") no-repeat center/cover;
+  }
 }
 
 @media screen and (max-width: 767px) {
@@ -2453,6 +2644,10 @@ button,
 
   .products-card--minion-1 {
     background-image: url("../img/products/Minion-1-mobil@2x.jpg");
+  }
+
+  .feedback {
+    background: #c3e5fb url("../img/form-background-mobil@2x.jpg") no-repeat center/cover;
   }
 }
 

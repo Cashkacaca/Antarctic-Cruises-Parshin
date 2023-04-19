@@ -50,3 +50,15 @@
     width: calc(100% - 50px);
   }
 }
+
+.btn--form {
+  width: calc(100% - 12px);
+  padding: 11px 20px;
+  background-color: $color-white-text;
+  color: $color-text;
+  font-weight: 600;
+  line-height: 1.5;
+
+  display: flex;
+  justify-content: center;
+}
