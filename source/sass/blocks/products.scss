@@ -4,11 +4,11 @@
   padding: 86px 0 120px;
 
   @include vp-1023 {
-    padding: 90px 15px 83px;
+    padding: 90px 15px 100px;
   }
 
   @include vp-767 {
-    padding: 57px 9px 48px;
+    padding: 57px 9px 65px;
   }
 }
 
@@ -35,11 +35,11 @@
   list-style-type: none;
 
   display: grid;
-  grid-template-columns: repeat(4, minmax(260px, 309px));
+  grid-template-columns: repeat(4, minmax(216px, 260px));
   gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(2, minmax(260px, 309px));
+    grid-template-columns: repeat(2, 309px);
   }
 
   @include vp-767 {

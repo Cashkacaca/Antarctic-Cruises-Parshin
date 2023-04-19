@@ -30,23 +30,72 @@
   padding: 50px 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+
+  @include vp-1023 {
+    padding: 88px 0 100px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 52px;
+  }
+
+  @include vp-767 {
+    padding: 59px 0 100px;
+    row-gap: 35px;
+  }
 }
 
 .feedback__text-wrap {
   margin-bottom: 6px;
   align-self: center;
+
+  @include vp-1023 {
+    margin: 0;
+    text-align: center;
+  }
+
+  @include vp-767 {
+    padding: 0 14px 0;
+  }
 }
 
 .feedback__heading {
   margin: 0 0 11px;
   font-size: 40px;
   line-height: 1.5;
+
+  @include vp-1023 {
+    margin: 0 0 5px;
+    font-size: 34px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.3;
+  }
 }
 
 .feedback__text {
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
+
+  @include vp-767 {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+}
+
+.feedback__text br {
+  @include vp-767 {
+    display: none;
+  }
+}
+
+.feedback__text span {
+  @include vp-767 {
+    display: block;
+  }
 }
 
 .feedback__form-wrap {

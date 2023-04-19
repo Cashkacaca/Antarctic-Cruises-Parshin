@@ -1642,8 +1642,8 @@ button,
   list-style-type: none;
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: (minmax(260px, 309px))[4];
-  grid-template-columns: repeat(4, minmax(260px, 309px));
+  -ms-grid-columns: (minmax(216px, 260px))[4];
+  grid-template-columns: repeat(4, minmax(216px, 260px));
   gap: 30px;
 }
 
@@ -2126,7 +2126,7 @@ button,
   }
 
   .products__wrapper {
-    padding: 90px 15px 83px;
+    padding: 90px 15px 100px;
   }
 
   .products__heading {
@@ -2134,8 +2134,8 @@ button,
   }
 
   .products__cards {
-    -ms-grid-columns: (minmax(260px, 309px))[2];
-    grid-template-columns: repeat(2, minmax(260px, 309px));
+    -ms-grid-columns: (309px)[2];
+    grid-template-columns: repeat(2, 309px);
   }
 
   .products-card {
@@ -2146,11 +2146,6 @@ button,
   .products-card__heading {
     left: 35px;
     bottom: 13px;
-  }
-
-  .products-card__heading {
-    left: 25px;
-    bottom: 3px;
   }
 
   .products-card--atlantis {
@@ -2179,6 +2174,32 @@ button,
 
   .feedback {
     background: #c3e5fb url("../img/form-background-tablet.jpg") no-repeat center/cover;
+  }
+
+  .feedback__wrapper {
+    padding: 88px 0 100px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    row-gap: 52px;
+  }
+
+  .feedback__text-wrap {
+    margin: 0;
+    text-align: center;
+  }
+
+  .feedback__heading {
+    margin: 0 0 5px;
+    font-size: 34px;
+  }
+
+  .form {
+    margin: 0 auto;
   }
 }
 
@@ -2499,7 +2520,7 @@ button,
   }
 
   .products__wrapper {
-    padding: 57px 9px 48px;
+    padding: 57px 9px 65px;
   }
 
   .products__heading {
@@ -2515,6 +2536,11 @@ button,
   .products-card {
     padding-left: 25px;
     background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
+  }
+
+  .products-card__heading {
+    left: 25px;
+    bottom: 3px;
   }
 
   .products-card--atlantis {
@@ -2543,6 +2569,44 @@ button,
 
   .feedback {
     background: #c3e5fb url("../img/form-background-mobil.jpg") no-repeat center/cover;
+  }
+
+  .feedback__wrapper {
+    padding: 59px 0 100px;
+    row-gap: 35px;
+  }
+
+  .feedback__text-wrap {
+    padding: 0 14px 0;
+  }
+
+  .feedback__heading {
+    margin-bottom: 12px;
+    font-size: 24px;
+    line-height: 1.3;
+  }
+
+  .feedback__text {
+    font-size: 16px;
+    line-height: 1.4;
+  }
+
+  .feedback__text br {
+    display: none;
+  }
+
+  .feedback__text span {
+    display: block;
+  }
+
+  .form {
+    width: 100%;
+    padding: 36px 17px 50px 29px;
+  }
+
+  .form__description {
+    line-height: 1.4;
+    text-align: center;
   }
 }
 
