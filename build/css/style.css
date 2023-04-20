@@ -1944,6 +1944,10 @@ button,
   .leading__description br {
     display: none;
   }
+
+  .form__item--checkbox br {
+    display: none;
+  }
 }
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
@@ -2137,6 +2141,9 @@ button,
   .products__cards {
     -ms-grid-columns: (309px)[2];
     grid-template-columns: repeat(2, 309px);
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
   }
 
   .products-card {
@@ -2573,7 +2580,7 @@ button,
   }
 
   .feedback__wrapper {
-    padding: 59px 0 100px;
+    padding: 59px 0 65px;
     row-gap: 35px;
   }
 
@@ -2602,7 +2609,7 @@ button,
 
   .form {
     width: 100%;
-    padding: 34px 17px 50px 29px;
+    padding: 34px 17px 40px 29px;
   }
 
   .form__description {
@@ -2612,8 +2619,14 @@ button,
   }
 
   .form__item--checkbox {
-    margin: -14px 0 16px;
+    margin: -2px 0 28px;
     padding-left: 28px;
+  }
+
+  .form__item--checkbox label {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
   }
 
   .form__label span {
@@ -2623,6 +2636,10 @@ button,
   .form__item--checkbox input {
     width: 20px;
     height: 20px;
+  }
+
+  .form__item--checkbox input:checked ~ svg {
+    left: 5px;
   }
 }
 

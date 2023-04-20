@@ -40,6 +40,7 @@
 
   @include vp-1023 {
     grid-template-columns: repeat(2, 309px);
+    justify-content: center;
   }
 
   @include vp-767 {
