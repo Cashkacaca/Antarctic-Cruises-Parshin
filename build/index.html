@@ -312,7 +312,8 @@
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="form__fieldset">
 
-                <p class="form__description">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время</p>
+                <p class="form__description">Оставьте заявку и&nbsp;мы&nbsp;свяжемся с&nbsp;вами в&nbsp;ближайшее время
+                </p>
 
                 <ul class="form__list">
 
@@ -363,8 +364,20 @@
         <h2 class="visually-hidden">Адресс и контактные данные.</h2>
         <div class="address__wrapper">
 
-          <div class="address__map">
+          <div class="address__map" id="ymap">
+            <noscript>
+              <picture>
 
+                <source srcset="img/map-mobil.jpg, img/map-mobil@2x.jpg 2x" type="image/png" media="(max-width: 767px)">
+
+                <source srcset="img/map-tablet.jpg, img/map-tablet@2x.jpg 2x" type="image/png"
+                  media="(max-width: 1023px)">
+
+                <img class="address__map__images" src="img/map-desctop.jpg" srcset="img/map-desctopp@2x.jpg 2x"
+                  width="560" height="306" alt="Адрес офиса продаж.">
+
+              </picture>
+            </noscript>
           </div>
 
           <div class="address__description">
@@ -522,7 +535,7 @@
     </div>
   </div>
 
-
+  <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
   <!-- <script src="js/vendor.min.js"></script> -->
   <script src="js/main.min.js"></script>
 </body>

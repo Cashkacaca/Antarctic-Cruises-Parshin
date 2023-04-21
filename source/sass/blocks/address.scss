@@ -1,0 +1,37 @@
+.address__wrapper {
+  max-width: 1160px;
+  margin: 0 auto;
+  padding: 120px 0;
+  display: grid;
+  grid-template-columns: repeat(2, 560px);
+}
+
+.address__map {
+  width: 100%;
+  height: 306px;
+}
+
+.address__description-heading {
+  margin: 0;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.address__description-text {
+  margin: 0;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// Скрываем копирайты у яндекс карты
+
+[class*="copyrights-pane"] {
+  display: none !important;
+}
+
+// Сделать яндекс карту серой
+
+// [class*="ground-pane"] {
+//   filter: grayscale(1);
+// }
