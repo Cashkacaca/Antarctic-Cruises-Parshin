@@ -3,26 +3,55 @@
   margin: 0 auto;
   padding: 120px 0;
   display: grid;
-  grid-template-columns: repeat(2, 560px);
+  grid-template-columns: minmax(324px, 560px) minmax(324px, 500px);
+  column-gap: 100px;
 }
 
 .address__map {
   width: 100%;
   height: 306px;
+  display: flex;
+  align-items: center;
+}
+
+.address__map img {
+  width: 100%;
+}
+
+.address__description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .address__description-heading {
-  margin: 0;
+  margin: 0 0 30px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
 }
 
+.address__text-wrap {
+  margin: 0 0 20px;
+  display: flex;
+  align-items: center;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.address__text-wrap svg {
+  margin-right: 9px;
+}
+
 .address__description-text {
   margin: 0;
+  display: contents;
   font-size: 16px;
   line-height: 1.5;
 }
+
 
 // Скрываем копирайты у яндекс карты
 
