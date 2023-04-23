@@ -5,6 +5,17 @@
   display: grid;
   grid-template-columns: minmax(324px, 560px) minmax(324px, 500px);
   column-gap: 100px;
+
+  @include vp-1023 {
+    padding: 100px 0;
+    column-gap: 30px;
+  }
+
+  @include vp-767 {
+    padding: 58px 0 46px;
+    grid-template-columns: 1fr;
+    row-gap: 34px;
+  }
 }
 
 .address__map {
@@ -12,6 +23,14 @@
   height: 306px;
   display: flex;
   align-items: center;
+
+  @include vp-1023 {
+    height: 335px;
+  }
+
+  @include vp-767 {
+    grid-row: 2 / 3;
+  }
 }
 
 .address__map img {
@@ -22,6 +41,10 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  @include vp-767 {
+    grid-row: 1 / 2;
+  }
 }
 
 .address__description-heading {
@@ -29,12 +52,25 @@
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
+
+  @include vp-1023 {
+    margin-bottom: 31px;
+  }
+
+  @include vp-767 {
+    margin-bottom: 32px;
+  }
 }
 
 .address__text-wrap {
   margin: 0 0 20px;
   display: flex;
   align-items: center;
+
+  @include vp-1023 {
+    margin-bottom: 18px;
+    align-items: start;
+  }
 
   &:last-of-type {
     margin-bottom: 0;
@@ -52,14 +88,21 @@
   line-height: 1.5;
 }
 
+.address__description-text br {
+  @media (min-width: $vp-1024) {
+    display: none;
+  }
+}
+
 
 // Скрываем копирайты у яндекс карты
 
 [class*="copyrights-pane"] {
-  display: none !important;
+  // display: none !important;
+  display: none;
 }
 
-// Сделать яндекс карту серой
+// // Сделать яндекс карту серой
 
 // [class*="ground-pane"] {
 //   filter: grayscale(1);

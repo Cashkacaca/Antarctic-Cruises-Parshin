@@ -1,4 +1,4 @@
-let centerMap = [59.937557047314996,30.322618075393592];
+let centerMap = [59.937557047314996, 30.322618075393592];
 
 const init = () => {
   let map = new ymaps.Map('ymap', {
@@ -8,11 +8,11 @@ const init = () => {
 
   // Кастомная метка
   let kastomPin = new ymaps.Placemark(centerMap, {}, {
-		iconLayout: 'default#image',
-		iconImageHref: '../../img/svg/pin-map.svg',
-		iconImageSize: [18, 22],
-		iconImageOffset: [-9, -14]
-	});
+    iconLayout: 'default#image',
+    iconImageHref: '../../img/svg/pin-map.svg',
+    iconImageSize: [18, 22],
+    iconImageOffset: [-9, -14]
+  });
 
   map.controls.remove('geolocationControl'); // удаляем геолокацию
   map.controls.remove('searchControl'); // удаляем поиск
