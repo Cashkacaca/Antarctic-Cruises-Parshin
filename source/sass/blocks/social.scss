@@ -1,7 +1,5 @@
 .social {
   margin-bottom: 10px;
-  align-self: end;
-
 
   @include vp-767 {
     margin-left: -4px;
@@ -15,7 +13,7 @@
   list-style-type: none;
 
   display: flex;
-  flex-wrap: wrap;
+  // flex-wrap: wrap;
 }
 
 .social__network-item {

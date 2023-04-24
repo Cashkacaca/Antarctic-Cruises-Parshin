@@ -10,7 +10,6 @@
   margin: 0 auto;
   padding: 35px 0;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
 
@@ -22,6 +21,11 @@
     padding: 20px 0;
     position: relative;
   }
+}
+
+.page-header__logo {
+  margin-right: 40px;
+  align-self: baseline;
 }
 
 .page-header__logo--hidden {

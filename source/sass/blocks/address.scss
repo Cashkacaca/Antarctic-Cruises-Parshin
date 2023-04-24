@@ -64,8 +64,9 @@
 
 .address__text-wrap {
   margin: 0 0 20px;
-  display: flex;
-  align-items: center;
+  display: grid;
+  grid-template-columns: 18px 1fr;
+  column-gap: 10px;
 
   @include vp-1023 {
     margin-bottom: 18px;
@@ -77,13 +78,8 @@
   }
 }
 
-.address__text-wrap svg {
-  margin-right: 9px;
-}
-
 .address__description-text {
   margin: 0;
-  display: contents;
   font-size: 16px;
   line-height: 1.5;
 }

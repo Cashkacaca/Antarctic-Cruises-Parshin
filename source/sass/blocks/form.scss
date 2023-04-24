@@ -98,14 +98,12 @@
 }
 
 .form__item--checkbox input {
-  margin: auto 0;
   width: 18px;
   height: 18px;
   padding: 0;
   position: absolute;
   left: 0;
-  top: 0;
-  bottom: 0;
+  top: 3px;
   appearance: none;
 
   @include vp-767 {

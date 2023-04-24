@@ -20,7 +20,8 @@
 }
 
 .site-map__item {
-  margin-right: 33px;
+  max-width: 200px;
+  margin: 0 33px 10px 0;
 
   &:last-of-type {
     margin-right: 0;
