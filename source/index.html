@@ -308,7 +308,7 @@
                 выезда</span> и&nbsp;сэкономьте до&nbsp;50%</p>
           </div>
 
-          <div class="feedback__form-wrap">
+          <div class="feedback__form-wrap" data-form-validate data-callback="base">
             <form class="form" action="https://echo.htmlacademy.ru/" method="post">
               <fieldset class="form__fieldset">
 
@@ -317,21 +317,25 @@
 
                 <ul class="form__list">
 
-                  <li class="form__item">
+                  <li class="form__item" data-validate-type="text" data-limitation="name"
+                    data-message-extra="Проверьте корректность заполнения поля">
                     <label class="form__label">
                       <span class="visually-hidden">Имя</span>
                       <input type="text" name="name" placeholder="Имя">
                     </label>
                   </li>
 
-                  <li class="form__item">
+                  <li class="form__item" data-validate-type="phone" data-on-input-validate
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно">
                     <label class="form__label">
                       <span class="visually-hidden">Телефон</span>
                       <input type="tel" name="phone" placeholder="Телефон">
                     </label>
                   </li>
 
-                  <li class="form__item">
+                  <li class="form__item" data-validate-type="email"
+                    data-message-extra="Проверьте корректность заполнения поля">
                     <label class="form__label">
                       <span class="visually-hidden">Email</span>
                       <input type="email" name="email" placeholder="Email">
@@ -478,76 +482,8 @@
 
   </div>
 
-
-  <!-- Модалки -->
-  <div class="modal modal--preload" data-modal="feedback">
-    <div class="modal__wrapper">
-      <div class="modal__overlay" data-close-modal></div>
-      <div class="modal__content" data-form-validate data-callback="base">
-        <form class="modal__form form" action="https://echo.htmlacademy.ru/" method="post">
-          <fieldset class="form__fieldset">
-            <legend class="form__heading form__heading--modal">Закажите звонок</legend>
-
-            <p class="form__description">Оставьте контакты, мы&nbsp;проконсультируем вас бесплатно в&nbsp;удобное
-              время
-            </p>
-
-            <ul class="form__list form__list--modal">
-
-              <li class="form__item form__item--text" data-validate-type="text" data-limitation="name"
-                data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-required>
-                <label class="form__label">
-                  <span class="visually-hidden">Имя</span>
-                  <input type="text" name="name-modal" placeholder="Имя" required data-focus>
-                </label>
-              </li>
-
-              <li class="form__item form__item--tel" data-validate-type="phone" data-on-input-validate
-                data-message-base="Поле обязательно к заполнению"
-                data-message-extra="Проверьте корректность заполнения поля" data-message-success="Поле заполнено верно"
-                data-required>
-                <label class="form__label">
-                  <span class="visually-hidden">Телефон</span>
-                  <input type="tel" name="phone-modal" placeholder="Телефон" required>
-                </label>
-              </li>
-
-              <li class="form__item form__item--textarea form__item--textarea-modal" data-validate-type="text">
-                <textarea name="question-modal" id="question-modal" cols="35" rows="5"
-                  placeholder="Ваш вопрос"></textarea>
-              </li>
-
-              <li class="form__item form__item--checkbox form__item--checkbox-modal" data-validate-type="checkbox"
-                data-message-base="Поле обязательно к заполнению" data-required>
-                <label class="form__label">
-                  <input type="checkbox" name="consent-phone" value="consent" checked required>
-                  <span>Я&nbsp;согласен на&nbsp;обработку персональных данных</span>
-                  <svg width="9" height="6">
-                    <use xlink:href="img/sprite.svg#arrow-checkbox"></use>
-                  </svg>
-                </label>
-              </li>
-
-              <li class="form__item form__item--button">
-                <button class="btn btn--form btn--form-modal" type="submit">Отправить</button>
-              </li>
-
-            </ul>
-          </fieldset>
-        </form>
-
-        <button class="modal__close-btn btn-reset" type="button" aria-label="Закрыть попап" data-close-modal>
-          <svg width="20" height="20">
-            <use xlink:href="img/sprite.svg#icon-close"></use>
-          </svg>
-        </button>
-      </div>
-    </div>
-  </div>
-
   <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
-  <!-- <script src="js/vendor.min.js"></script> -->
+  <script src="js/vendor.min.js"></script>
   <script src="js/main.min.js"></script>
 </body>
 
