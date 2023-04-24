@@ -44,7 +44,7 @@
   margin-right: 33px;
 
   @include vp-1023 {
-    margin-right: 23px;
+    margin: 0 23px 20px 0;
   }
 
   &:last-of-type {

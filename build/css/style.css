@@ -2101,12 +2101,13 @@ button,
   }
 
   .page-header__logo img {
+    max-width: none;
     width: 38px;
     height: 20px;
   }
 
   .main-nav__item {
-    margin-right: 23px;
+    margin: 0 23px 20px 0;
   }
 
   .main-nav__link {
@@ -2134,7 +2135,7 @@ button,
   }
 
   .footer__wrapper {
-    padding-bottom: 36px;
+    padding: 47px 0 39px;
     -ms-grid-columns: 38px 1fr;
     grid-template-columns: 38px 1fr;
     -webkit-column-gap: 25px;
