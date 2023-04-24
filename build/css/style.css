@@ -2545,7 +2545,7 @@ button,
   .footer__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 40px 0 24px;
+    padding: 40px 0 34px;
   }
 
   .footer__logo-wrap {
@@ -2587,6 +2587,11 @@ button,
     -ms-flex-item-align: start;
     -ms-grid-row-align: start;
     align-self: start;
+  }
+
+  .social__network {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 
   .social__network-item {
