@@ -315,18 +315,21 @@
                 <ul class="form__list">
 
                   <li class="form__item" data-validate-type="text" data-limitation="name"
-                    data-message-extra="Проверьте корректность заполнения поля">
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля" data-required>
                     <label class="form__label">
                       <span class="visually-hidden">Имя</span>
-                      <input type="text" name="name" placeholder="Имя">
+                      <input type="text" name="name" placeholder="Имя" required>
                     </label>
                   </li>
 
                   <li class="form__item" data-validate-type="phone" data-on-input-validate
-                    data-message-extra="Проверьте корректность заполнения поля">
+                    data-message-base="Поле обязательно к заполнению"
+                    data-message-extra="Проверьте корректность заполнения поля"
+                    data-message-success="Поле заполнено верно" data-required>
                     <label class="form__label">
                       <span class="visually-hidden">Телефон</span>
-                      <input type="tel" name="phone" placeholder="Телефон">
+                      <input type="tel" name="phone" placeholder="Телефон" required>
                     </label>
                   </li>
 
@@ -338,9 +341,10 @@
                     </label>
                   </li>
 
-                  <li class="form__item form__item--checkbox">
+                  <li class="form__item form__item--checkbox" data-validate-type="checkbox"
+                    data-message-base="Поле обязательно к заполнению" data-required>
                     <label class="form__label">
-                      <input type="checkbox" name="consent" value="consent" checked>
+                      <input type="checkbox" name="consent" value="consent" checked required>
                       <span>Я согласен на обработку<br> моих персональных данных</span>
                       <svg width="10" height="6">
                         <use xlink:href="img/sprite.svg#chekbox-arrow"></use>
