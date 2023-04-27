@@ -45,4 +45,8 @@
   @include vp-1023 {
     font-size: 12px;
   }
+
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
 }

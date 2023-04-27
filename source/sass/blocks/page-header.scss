@@ -26,6 +26,10 @@
 .page-header__logo {
   margin-right: 40px;
   align-self: baseline;
+
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
 }
 
 .page-header__logo--hidden {

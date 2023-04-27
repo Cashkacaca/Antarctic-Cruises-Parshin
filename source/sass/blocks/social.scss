@@ -35,6 +35,12 @@
   }
 }
 
+.social__network-item a {
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
+}
+
 .social__network-item svg {
   @include vp-1023 {
     width: 16px;

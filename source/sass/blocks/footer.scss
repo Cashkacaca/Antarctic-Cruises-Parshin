@@ -31,6 +31,10 @@
   @include vp-767 {
     margin-bottom: 21px;
   }
+
+  @include hover {
+    outline: 1px solid $color-default-white;
+  }
 }
 
 .footer__logo-wrap img {

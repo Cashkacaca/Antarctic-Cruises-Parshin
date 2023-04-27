@@ -15,10 +15,6 @@
   main {
     flex-grow: 1;
   }
-
-  @include vp-767 {
-    overflow-y: hidden;
-  }
 }
 
 .rouble {
