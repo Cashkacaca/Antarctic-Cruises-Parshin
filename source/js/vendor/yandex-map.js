@@ -9,7 +9,7 @@ const init = () => {
   // Кастомная метка
   let kastomPin = new ymaps.Placemark(centerMap, {}, {
     iconLayout: 'default#image',
-    iconImageHref: '../../img/svg/pin-map.svg',
+    iconImageHref: './img/svg/pin-map.svg',
     iconImageSize: [18, 22],
     iconImageOffset: [-9, -14]
   });
