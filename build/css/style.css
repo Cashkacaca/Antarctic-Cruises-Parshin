@@ -2842,43 +2842,43 @@ button,
 
 @media (-webkit-min-device-pixel-ratio: 1.5) and (max-width: 767px), (-o-min-device-pixel-ratio: 3/2) and (max-width: 767px), (min-resolution: 144dpi) and (max-width: 767px), (min-resolution: 1.5dppx) and (max-width: 767px) {
   .leading {
-    background: #002f67 url("../img/main-background-mobil@2x.jpg") no-repeat center/cover;
+    background: #002f67 url("../img/main-background-mobil@2x.webp") no-repeat center/cover;
   }
 
   .advantages {
-    background: #d9e6f4 url("../img/Advantages-mobil@2x.jpg") no-repeat center/cover;
+    background: #d9e6f4 url("../img/Advantages-mobil@2x.webp") no-repeat center/cover;
   }
 
   .products-card {
-    background: #011c40 url("../img/products/Astoria-mobil@2x.jpg") no-repeat center/cover;
+    background: #011c40 url("../img/products/Astoria-mobil@2x.webp") no-repeat center/cover;
   }
 
   .products-card--atlantis {
-    background-image: url("../img/products/Atlantis-mobil@2x.jpg");
+    background-image: url("../img/products/Atlantis-mobil@2x.webp");
   }
 
   .products-card--odyssey {
-    background-image: url("../img/products/Odyssey-mobil@2x.jpg");
+    background-image: url("../img/products/Odyssey-mobil@2x.webp");
   }
 
   .products-card--olympia {
-    background-image: url("../img/products/Olympia-mobil@2x.jpg");
+    background-image: url("../img/products/Olympia-mobil@2x.webp");
   }
 
   .products-card--aurora {
-    background-image: url("../img/products/Aurora-mobil@2x.jpg");
+    background-image: url("../img/products/Aurora-mobil@2x.webp");
   }
 
   .products-card--leonor {
-    background-image: url("../img/products/Leonor-mobil@2x.jpg");
+    background-image: url("../img/products/Leonor-mobil@2x.webp");
   }
 
   .products-card--minion-1 {
-    background-image: url("../img/products/Minion-1-mobil@2x.jpg");
+    background-image: url("../img/products/Minion-1-mobil@2x.webp");
   }
 
   .feedback {
-    background: #c3e5fb url("../img/form-background-mobil@2x.jpg") no-repeat center/cover;
+    background: #c3e5fb url("../img/form-background-mobil@2x.webp") no-repeat center/cover;
   }
 }
 
