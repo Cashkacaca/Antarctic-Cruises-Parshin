@@ -20,8 +20,25 @@
 
 .advantage-card__icon svg {
   @include vp-1023 {
-    width: 36px;
     height: 26px;
+  }
+}
+
+.advantage-card__icon--cruise-ship svg {
+  @include vp-1023 {
+    width: 21px;
+  }
+}
+
+.advantage-card__icon--all-inclusive svg {
+  @include vp-1023 {
+    width: 27px;
+  }
+}
+
+.advantage-card__icon--boat svg {
+  @include vp-1023 {
+    width: 36px;
   }
 }
 

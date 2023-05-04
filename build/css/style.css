@@ -2203,8 +2203,19 @@ button,
   }
 
   .advantage-card__icon svg {
-    width: 36px;
     height: 26px;
+  }
+
+  .advantage-card__icon--cruise-ship svg {
+    width: 21px;
+  }
+
+  .advantage-card__icon--all-inclusive svg {
+    width: 27px;
+  }
+
+  .advantage-card__icon--boat svg {
+    width: 36px;
   }
 
   .advantage-card__title {
