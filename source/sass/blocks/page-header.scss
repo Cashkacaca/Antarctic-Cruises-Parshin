@@ -2,7 +2,6 @@
   background-color: #002f67;
 }
 
-
 .page-header__inner {
   z-index: 1;
   position: relative;
@@ -39,8 +38,9 @@
 }
 
 .page-header__logo img {
+  max-width: none;
+
   @include vp-1023 {
-    max-width: none;
     width: 38px;
     height: 20px;
   }
