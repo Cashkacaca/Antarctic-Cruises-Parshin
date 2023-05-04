@@ -64,18 +64,6 @@
   }
 }
 
-.form__item--checkbox label {
-  @include vp-767 {
-    display: flex;
-  }
-}
-
-.form__item--checkbox br {
-  @media (min-width: $vp-768) {
-    display: none;
-  }
-}
-
 .form__label span {
   display: inline-block;
   font-size: 10px;
@@ -121,7 +109,7 @@
   display: none;
 }
 
-.form__item--checkbox input:checked ~ svg {
+.form__item--checkbox input:checked~svg {
   display: block;
   position: absolute;
   left: 4px;
@@ -130,5 +118,11 @@
 
   @include vp-767 {
     left: 5px;
+  }
+}
+
+.form__item--button {
+  @include vp-767 {
+    margin-top: -4px;
   }
 }

@@ -2011,20 +2011,6 @@ button,
   }
 */
 
-@media (min-width: 768px) {
-  .leading__heading br {
-    display: none;
-  }
-
-  .leading__description br {
-    display: none;
-  }
-
-  .form__item--checkbox br {
-    display: none;
-  }
-}
-
 @media (-webkit-min-device-pixel-ratio: 1.5) and (min-width: 1024px), (-o-min-device-pixel-ratio: 3/2) and (min-width: 1024px), (min-resolution: 144dpi) and (min-width: 1024px), (min-resolution: 1.5dppx) and (min-width: 1024px) {
   .leading {
     background: #002f67 url("../img/main-background-desctop@2x.jpg") no-repeat center/cover;
@@ -2068,14 +2054,6 @@ button,
 }
 
 @media (min-width: 1024px) {
-  .desc__heading br {
-    display: none;
-  }
-
-  .advantage-card__title br {
-    display: none;
-  }
-
   .address__description-text br {
     display: none;
   }
@@ -2117,12 +2095,12 @@ button,
   }
 
   .leading {
-    margin-top: -80px;
+    margin-top: -100px;
     background: #002f67 url("../img/main-background-tablet.jpg") no-repeat center/cover;
   }
 
   .leading__wrapper {
-    padding: 248px 0 241px;
+    padding: 268px 0 241px;
   }
 
   .leading__heading {
@@ -2231,8 +2209,8 @@ button,
   }
 
   .products__cards {
-    -ms-grid-columns: (309px)[2];
-    grid-template-columns: repeat(2, 309px);
+    -ms-grid-columns: (minmax(309px, 1fr))[2];
+    grid-template-columns: repeat(2, minmax(309px, 1fr));
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
@@ -2637,6 +2615,10 @@ button,
     font-size: 24px;
   }
 
+  .desc__images img {
+    width: 100%;
+  }
+
   .advantages {
     background: #d9e6f4 url("../img/Advantages-mobil.jpg") no-repeat center/cover;
   }
@@ -2659,6 +2641,10 @@ button,
   .advantage-card {
     min-height: 250px;
     padding: 24px 20px 10px 20px;
+  }
+
+  .advantage-card__title {
+    padding-right: 31px;
   }
 
   .products__wrapper {
@@ -2737,10 +2723,6 @@ button,
     display: none;
   }
 
-  .feedback__text span {
-    display: block;
-  }
-
   .form {
     width: 100%;
     padding: 34px 17px 40px 29px;
@@ -2757,12 +2739,6 @@ button,
     padding-left: 28px;
   }
 
-  .form__item--checkbox label {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-  }
-
   .form__label span {
     line-height: 1.2;
   }
@@ -2774,6 +2750,10 @@ button,
 
   .form__item--checkbox input:checked ~ svg {
     left: 5px;
+  }
+
+  .form__item--button {
+    margin-top: -4px;
   }
 
   .address__wrapper {

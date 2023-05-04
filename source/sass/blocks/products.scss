@@ -39,7 +39,7 @@
   gap: 30px;
 
   @include vp-1023 {
-    grid-template-columns: repeat(2, 309px);
+    grid-template-columns: repeat(2, minmax(309px, 1fr));
     justify-content: center;
   }
 

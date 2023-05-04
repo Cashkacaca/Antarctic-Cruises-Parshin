@@ -92,12 +92,6 @@
   }
 }
 
-.feedback__text span {
-  @include vp-767 {
-    display: block;
-  }
-}
-
 .feedback__form-wrap {
   grid-column: -1 / -2;
   justify-self: end;
