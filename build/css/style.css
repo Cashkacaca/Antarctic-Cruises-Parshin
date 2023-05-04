@@ -1668,7 +1668,7 @@ button,
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
-  color: #c3e5fb;
+  color: #f9fbfd;
   position: absolute;
   left: 30px;
   bottom: 8px;
@@ -2300,17 +2300,29 @@ button,
 
   .address__map {
     height: 335px;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center;
+  }
+
+  .address__description {
+    display: block;
+    padding-top: 66px;
   }
 
   .address__description-heading {
-    margin-bottom: 31px;
+    margin-bottom: 32px;
   }
 
   .address__text-wrap {
-    margin-bottom: 18px;
+    margin-bottom: 23px;
     -webkit-box-align: start;
     -ms-flex-align: start;
     align-items: start;
+  }
+
+  .address__description-text {
+    margin-top: -4px;
   }
 }
 
@@ -2754,7 +2766,7 @@ button,
   }
 
   .address__wrapper {
-    padding: 58px 0 46px;
+    padding: 58px 0 49px;
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
     row-gap: 34px;
@@ -2767,6 +2779,10 @@ button,
   }
 
   .address__description {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-top: 0;
     -ms-grid-row: 1;
     -ms-grid-row-span: 1;
     grid-row: 1/2;
