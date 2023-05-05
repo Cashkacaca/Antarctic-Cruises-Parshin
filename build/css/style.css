@@ -1665,24 +1665,32 @@ button,
   overflow: auto;
 }
 
-.products-card:focus::-webkit-scrollbar,
-.products-card:hover::-webkit-scrollbar {
-  width: 0;
-}
-
 .products-card__heading {
   margin: 0 0 14px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
   color: #f9fbfd;
+}
+
+.products-card__heading--basic {
   position: absolute;
   left: 30px;
   bottom: 8px;
 }
 
-.products-card:focus .products-card__heading,
-.products-card:hover .products-card__heading {
+.products-card:focus .products-card__heading--basic,
+.products-card:hover .products-card__heading--basic {
+  display: none;
+}
+
+.products-card__heading--inner {
+  display: none;
+}
+
+.products-card:focus .products-card__heading--inner,
+.products-card:hover .products-card__heading--inner {
+  display: block;
   position: static;
   color: #f9fbfd;
 }
@@ -1756,6 +1764,7 @@ button,
 }
 
 .feedback__text-wrap {
+  width: 100%;
   margin-bottom: 6px;
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
@@ -1772,6 +1781,10 @@ button,
   margin: 0;
   font-size: 18px;
   line-height: 1.5;
+}
+
+.feedback__text span {
+  white-space: nowrap;
 }
 
 .feedback__form-wrap {
@@ -2080,7 +2093,7 @@ button,
 
   .products-card:focus .btn--products-card,
   .products-card:hover .btn--products-card {
-    width: calc(100% - 70px);
+    width: calc(100% - 12px);
   }
 
   .page-header__inner {
@@ -2226,7 +2239,7 @@ button,
     background: #011c40 url("../img/products/Astoria-tablet.jpg") no-repeat center/cover;
   }
 
-  .products-card__heading {
+  .products-card__heading--basic {
     left: 35px;
     bottom: 13px;
   }
@@ -2369,7 +2382,7 @@ button,
 
   .products-card:focus .btn--products-card,
   .products-card:hover .btn--products-card {
-    width: calc(100% - 50px);
+    width: calc(100% - 2px);
   }
 
   .modal__wrapper {
@@ -2670,7 +2683,7 @@ button,
     background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
   }
 
-  .products-card__heading {
+  .products-card__heading--basic {
     left: 25px;
     bottom: 3px;
   }

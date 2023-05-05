@@ -35,10 +35,10 @@
     background-image: none;
     overflow: auto;
 
-    // Убираем полосу прокрутки
-    &::-webkit-scrollbar {
-      width: 0;
-    }
+    // // Убираем(стилизуем) полосу прокрутки
+    // &::-webkit-scrollbar {
+    //   width: 0;
+    // }
   }
 }
 
@@ -48,7 +48,9 @@
   font-size: 18px;
   line-height: 1.5;
   color: $color-white-text;
+}
 
+.products-card__heading--basic {
   position: absolute;
   left: 30px;
   bottom: 8px;
@@ -64,8 +66,18 @@
   }
 }
 
-.products-card:focus .products-card__heading,
-.products-card:hover .products-card__heading {
+.products-card:focus .products-card__heading--basic,
+.products-card:hover .products-card__heading--basic {
+  display: none;
+}
+
+.products-card__heading--inner {
+  display: none;
+}
+
+.products-card:focus .products-card__heading--inner,
+.products-card:hover .products-card__heading--inner {
+  display: block;
   position: static;
   color: $color-white-text;
 }

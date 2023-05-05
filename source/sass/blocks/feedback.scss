@@ -45,6 +45,7 @@
 }
 
 .feedback__text-wrap {
+  width: 100%;
   margin-bottom: 6px;
   align-self: center;
 
@@ -84,6 +85,10 @@
     font-size: 16px;
     line-height: 1.4;
   }
+}
+
+.feedback__text span {
+  white-space: nowrap;
 }
 
 .feedback__text br {
