@@ -109,16 +109,17 @@
     top: 0;
     right: 0;
     padding: 20px 0 20px 15px;
+  }
+}
 
-    &::before {
-      position: absolute;
-      content: "";
-      width: 100%;
-      height: 100%;
-      top: 0;
-      right: 100%;
-      background-color: rgba(0, 43, 102, 0.5);
-    }
+.main-nav--opened .main-nav__overlay {
+  @include vp-767 {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    right: 100%;
+    background-color: rgba(0, 43, 102, 0.5);
   }
 }
 
@@ -131,6 +132,7 @@
 
 .main-nav--opened .main-nav__toggle {
   @include vp-767 {
+
     &::before,
     &::after {
       content: "";
