@@ -1,5 +1,5 @@
 .products-card {
-  min-height: 386px;
+  height: 386px;
   color: $color-white-text;
   padding: 29px 23px 30px 25px;
   position: relative;
@@ -33,6 +33,12 @@
   &:focus,
   &:hover {
     background-image: none;
+    overflow: auto;
+
+    // Убираем полосу прокрутки
+    &::-webkit-scrollbar {
+      width: 0;
+    }
   }
 }
 
@@ -72,6 +78,7 @@
 .products-card:focus .products-card__list,
 .products-card:hover .products-card__list {
   display: block;
+  margin-bottom: 24px;
 }
 
 .products-card__terminology {
@@ -87,7 +94,7 @@
   line-height: 1.4;
 
   &:last-of-type {
-    margin-bottom: 49px;
+    margin-bottom: 0;
   }
 }
 

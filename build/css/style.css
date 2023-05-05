@@ -686,7 +686,7 @@ button,
 
 .products-card:focus .btn--products-card,
 .products-card:hover .btn--products-card {
-  width: calc(100% - 50px);
+  width: calc(100% - 2px);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -697,8 +697,7 @@ button,
   font-weight: 600;
   line-height: 1.5;
   color: #011c40;
-  position: absolute;
-  bottom: 34px;
+  text-align: center;
 }
 
 .btn--form {
@@ -1602,9 +1601,7 @@ button,
   display: grid;
   -ms-grid-columns: (minmax(206px, 360px))[3];
   grid-template-columns: repeat(3, minmax(206px, 360px));
-  -webkit-column-gap: 40px;
-  -moz-column-gap: 40px;
-  column-gap: 40px;
+  gap: 40px;
 }
 
 .advantage-card {
@@ -1655,7 +1652,7 @@ button,
 }
 
 .products-card {
-  min-height: 386px;
+  height: 386px;
   color: #f9fbfd;
   padding: 29px 23px 30px 25px;
   position: relative;
@@ -1665,6 +1662,12 @@ button,
 .products-card:focus,
 .products-card:hover {
   background-image: none;
+  overflow: auto;
+}
+
+.products-card:focus::-webkit-scrollbar,
+.products-card:hover::-webkit-scrollbar {
+  width: 0;
 }
 
 .products-card__heading {
@@ -1692,6 +1695,7 @@ button,
 .products-card:focus .products-card__list,
 .products-card:hover .products-card__list {
   display: block;
+  margin-bottom: 24px;
 }
 
 .products-card__terminology {
@@ -1708,7 +1712,7 @@ button,
 }
 
 .products-card__definition:last-of-type {
-  margin-bottom: 49px;
+  margin-bottom: 0;
 }
 
 /* Фоновые изображения карточек круизов*/
@@ -2173,9 +2177,7 @@ button,
   }
 
   .advantages__cards {
-    -webkit-column-gap: 30px;
-    -moz-column-gap: 30px;
-    column-gap: 30px;
+    gap: 30px;
   }
 
   .advantage-card {
@@ -2638,7 +2640,6 @@ button,
   .advantages__cards {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    row-gap: 30px;
   }
 
   .advantage-card {
