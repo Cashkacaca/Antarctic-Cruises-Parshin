@@ -132,7 +132,6 @@
 
 .main-nav--opened .main-nav__toggle {
   @include vp-767 {
-
     &::before,
     &::after {
       content: "";

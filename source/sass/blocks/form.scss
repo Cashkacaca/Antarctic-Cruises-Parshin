@@ -64,6 +64,10 @@
   }
 }
 
+.form__label {
+  cursor: pointer;
+}
+
 .form__label span {
   display: inline-block;
   font-size: 10px;
@@ -74,11 +78,16 @@
   }
 }
 
+.form__item.is-invalid input {
+  border: 2px solid #ff1553;
+}
+
 .form__label input {
   width: 100%;
   padding: 13px 16px 14px;
   border: none;
   background-color: $color-white-text;
+  cursor: pointer;
 
   &::placeholder {
     font-family: $ff-montserrat;

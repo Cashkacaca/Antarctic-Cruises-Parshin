@@ -1839,10 +1839,18 @@ button,
   padding-left: 23px;
 }
 
+.form__label {
+  cursor: pointer;
+}
+
 .form__label span {
   display: inline-block;
   font-size: 10px;
   line-height: 1.3;
+}
+
+.form__item.is-invalid input {
+  border: 2px solid #ff1553;
 }
 
 .form__label input {
@@ -1850,6 +1858,7 @@ button,
   padding: 13px 16px 14px;
   border: none;
   background-color: #f9fbfd;
+  cursor: pointer;
 }
 
 .form__label input::-webkit-input-placeholder {
@@ -1963,29 +1972,37 @@ button,
 }
 
 .address__description-heading {
-  margin: 0 0 30px;
+  margin: 0 0 32px;
   font-weight: 500;
   font-size: 18px;
   line-height: 1.5;
 }
 
-.address__text-wrap {
-  margin: 0 0 20px;
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 18px 1fr;
-  grid-template-columns: 18px 1fr;
-  -webkit-column-gap: 10px;
-  -moz-column-gap: 10px;
-  column-gap: 10px;
+.address__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
 }
 
-.address__text-wrap:last-of-type {
+.address__item {
+  margin-bottom: 22px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+}
+
+.address__item:last-of-type {
   margin-bottom: 0;
 }
 
+.address__item svg {
+  margin-right: 10px;
+}
+
 .address__description-text {
-  margin: 0;
   font-size: 16px;
   line-height: 1.5;
 }
@@ -2331,13 +2348,6 @@ button,
 
   .address__description-heading {
     margin-bottom: 32px;
-  }
-
-  .address__text-wrap {
-    margin-bottom: 23px;
-    -webkit-box-align: start;
-    -ms-flex-align: start;
-    align-items: start;
   }
 
   .address__description-text {
@@ -2960,5 +2970,9 @@ button,
 
   .form__item:hover:not(.focus-visible) {
     outline: thick double #ffffff;
+  }
+
+  .address__item a:hover:not(.focus-visible) {
+    outline: 1px solid #011c40;
   }
 }
