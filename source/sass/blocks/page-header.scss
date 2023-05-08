@@ -26,7 +26,11 @@
   margin-right: 40px;
   align-self: baseline;
 
-  @include hover {
+  &:focus {
+    box-shadow: 1px 0 0 1px $color-default-white, -1px 0 0 1px $color-default-white;
+  }
+
+  @include hover-focus {
     outline: 1px solid $color-default-white;
   }
 }
