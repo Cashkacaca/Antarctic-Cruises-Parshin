@@ -20,7 +20,7 @@
 
   @include vp-767 {
     grid-template-columns: 1fr;
-    padding: 40px 0 34px;
+    padding: 40px 0 32px;
   }
 }
 
@@ -29,11 +29,17 @@
   align-self: center;
 
   @include vp-767 {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
   }
+}
 
+.footer__logo-wrap a {
   @include hover {
     outline: 1px solid $color-default-white;
+  }
+
+  @include vp-767 {
+    display: inline-block;
   }
 }
 

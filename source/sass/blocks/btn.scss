@@ -27,6 +27,7 @@
 
 .btn--products-card {
   display: none;
+  user-select: none;
 }
 
 .products-card:focus .btn--products-card,
@@ -59,4 +60,6 @@
 
   display: flex;
   justify-content: center;
+
+  user-select: none;
 }

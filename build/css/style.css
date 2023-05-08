@@ -682,6 +682,10 @@ button,
 
 .btn--products-card {
   display: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .products-card:focus .btn--products-card,
@@ -713,6 +717,10 @@ button,
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
 }
 
 .modal {
@@ -2626,11 +2634,15 @@ button,
   .footer__wrapper {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
-    padding: 40px 0 34px;
+    padding: 40px 0 32px;
   }
 
   .footer__logo-wrap {
-    margin-bottom: 21px;
+    margin-bottom: 15px;
+  }
+
+  .footer__logo-wrap a {
+    display: inline-block;
   }
 
   .footer__logo-wrap img {
@@ -2993,7 +3005,7 @@ button,
     outline: 1px solid #ffffff;
   }
 
-  .footer__logo-wrap:hover:not(.focus-visible) {
+  .footer__logo-wrap a:hover:not(.focus-visible) {
     outline: 1px solid #ffffff;
   }
 
