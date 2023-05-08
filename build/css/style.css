@@ -2531,11 +2531,12 @@ button,
 
   .main-nav--opened {
     width: calc(100% - 36px);
-    min-height: calc(100 * var(--vh, 1vh));
+    height: calc(100 * var(--vh, 1vh));
     position: fixed;
     top: 0;
     right: 0;
     padding: 20px 0 20px 15px;
+    overflow-y: auto;
   }
 
   .main-nav--opened .main-nav__overlay {
