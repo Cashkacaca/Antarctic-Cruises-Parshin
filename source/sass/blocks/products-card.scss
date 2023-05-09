@@ -26,8 +26,11 @@
   }
 
   @include vp-767 {
+    height: auto;
+    min-height: 386px;
     padding-left: 25px;
     background: $color-text url("../img/products/Astoria-mobil.jpg") no-repeat center / cover;
+    aspect-ratio: 135 / 193;
   }
 
   &:focus,
@@ -73,6 +76,10 @@
 
 .products-card__heading--inner {
   display: none;
+
+  @include vp-767 {
+    margin-bottom: 6.3%;
+  }
 }
 
 .products-card:focus .products-card__heading--inner,
@@ -91,6 +98,10 @@
 .products-card:hover .products-card__list {
   display: block;
   margin-bottom: 24px;
+
+  @include vp-767 {
+    margin-bottom: 10.3%;
+  }
 }
 
 .products-card__terminology {
@@ -98,12 +109,20 @@
   font-weight: 500;
   font-size: 14px;
   line-height: 1.4;
+
+  @include vp-767 {
+    margin-bottom: 0.9%;
+  }
 }
 
 .products-card__definition {
   margin: 0 0 11px;
   font-weight: 500;
   line-height: 1.4;
+
+  @include vp-767 {
+    margin-bottom: 5%;
+  }
 
   &:last-of-type {
     margin-bottom: 0;

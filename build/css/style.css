@@ -2756,13 +2756,33 @@ button,
   }
 
   .products-card {
+    height: auto;
+    min-height: 386px;
     padding-left: 25px;
     background: #011c40 url("../img/products/Astoria-mobil.jpg") no-repeat center/cover;
+    aspect-ratio: 135/193;
   }
 
   .products-card__heading--basic {
     left: 25px;
     bottom: 3px;
+  }
+
+  .products-card__heading--inner {
+    margin-bottom: 6.3%;
+  }
+
+  .products-card:focus .products-card__list,
+  .products-card:hover .products-card__list {
+    margin-bottom: 10.3%;
+  }
+
+  .products-card__terminology {
+    margin-bottom: 0.9%;
+  }
+
+  .products-card__definition {
+    margin-bottom: 5%;
   }
 
   .products-card--atlantis {
