@@ -653,6 +653,17 @@ button,
   padding: 0 40px;
 }
 
+.dis-scroll {
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  width: 100%;
+  height: 100vh;
+  -ms-scroll-chaining: none;
+  overscroll-behavior: none;
+}
+
 .btn {
   display: -webkit-inline-box;
   display: -ms-inline-flexbox;
@@ -2535,7 +2546,6 @@ button,
     top: 0;
     right: 0;
     padding: 20px 0 20px 15px;
-    overflow-y: auto;
   }
 
   .main-nav--opened .main-nav__overlay {
@@ -2578,11 +2588,15 @@ button,
   }
 
   .main-nav--opened .main-nav__list {
+    max-height: 80vh;
     padding: 0 30px 0 10px;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    overflow-y: auto;
   }
 
   .main-nav--opened .main-nav__item {
