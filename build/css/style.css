@@ -1351,11 +1351,12 @@ button,
 }
 
 .page-header {
-  background-color: #002f67;
+  z-index: 10;
+  position: absolute;
+  top: 0;
 }
 
 .page-header__inner {
-  z-index: 1;
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
@@ -1441,7 +1442,6 @@ button,
 }
 
 .leading {
-  margin-top: -108px;
   background: #002f67 url("../img/main-background-desctop.jpg") no-repeat center/cover;
 }
 
@@ -2174,7 +2174,6 @@ button,
   }
 
   .leading {
-    margin-top: -100px;
     background: #002f67 url("../img/main-background-tablet.jpg") no-repeat center/cover;
   }
 
@@ -2613,7 +2612,6 @@ button,
   }
 
   .leading {
-    margin-top: -62px;
     background: #002f67 url("../img/main-background-mobil.jpg") no-repeat center/cover;
   }
 

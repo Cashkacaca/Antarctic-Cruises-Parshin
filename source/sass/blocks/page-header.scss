@@ -1,9 +1,10 @@
 .page-header {
-  background-color: #002f67;
+  z-index: 10;
+  position: absolute;
+  top: 0;
 }
 
 .page-header__inner {
-  z-index: 1;
   position: relative;
   max-width: 1160px;
   margin: 0 auto;
