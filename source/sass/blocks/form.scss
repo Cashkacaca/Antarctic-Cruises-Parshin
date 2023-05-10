@@ -118,7 +118,7 @@
   display: none;
 }
 
-.form__item--checkbox input:checked~svg {
+.form__item--checkbox input:checked ~ svg {
   display: block;
   position: absolute;
   left: 4px;

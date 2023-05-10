@@ -30,7 +30,6 @@
   user-select: none;
 }
 
-// .products-card:focus .btn--products-card,
 .products-card:focus-within .btn--products-card,
 .products-card:hover .btn--products-card {
   width: calc(100% - 2px);

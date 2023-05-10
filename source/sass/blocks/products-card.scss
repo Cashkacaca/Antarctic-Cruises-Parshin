@@ -33,7 +33,6 @@
     aspect-ratio: 135 / 193;
   }
 
-  // &:focus,
   &:focus-within,
   &:hover {
     background-image: none;
@@ -70,7 +69,6 @@
   }
 }
 
-// .products-card:focus .products-card__heading--basic,
 .products-card:focus-within .products-card__heading--basic,
 .products-card:hover .products-card__heading--basic {
   display: none;
@@ -84,7 +82,6 @@
   }
 }
 
-// .products-card:focus .products-card__heading--inner,
 .products-card:focus-within .products-card__heading--inner,
 .products-card:hover .products-card__heading--inner {
   display: block;
@@ -97,7 +94,6 @@
   display: none;
 }
 
-// .products-card:focus .products-card__list,
 .products-card:focus-within .products-card__list,
 .products-card:hover .products-card__list {
   display: block;
