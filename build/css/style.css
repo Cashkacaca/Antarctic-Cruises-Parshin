@@ -699,7 +699,7 @@ button,
   user-select: none;
 }
 
-.products-card:focus .btn--products-card,
+.products-card:focus-within .btn--products-card,
 .products-card:hover .btn--products-card {
   width: calc(100% - 2px);
   display: -webkit-box;
@@ -1699,7 +1699,7 @@ button,
   background: #011c40 url("../img/products/Astoria-desctop.jpg") no-repeat center/cover;
 }
 
-.products-card:focus,
+.products-card:focus-within,
 .products-card:hover {
   background-image: none;
   overflow: auto;
@@ -1719,7 +1719,7 @@ button,
   bottom: 8px;
 }
 
-.products-card:focus .products-card__heading--basic,
+.products-card:focus-within .products-card__heading--basic,
 .products-card:hover .products-card__heading--basic {
   display: none;
 }
@@ -1728,7 +1728,7 @@ button,
   display: none;
 }
 
-.products-card:focus .products-card__heading--inner,
+.products-card:focus-within .products-card__heading--inner,
 .products-card:hover .products-card__heading--inner {
   display: block;
   position: static;
@@ -1740,7 +1740,7 @@ button,
   display: none;
 }
 
-.products-card:focus .products-card__list,
+.products-card:focus-within .products-card__list,
 .products-card:hover .products-card__list {
   display: block;
   margin-bottom: 24px;
@@ -2161,7 +2161,7 @@ button,
     padding: 0 45px;
   }
 
-  .products-card:focus .btn--products-card,
+  .products-card:focus-within .btn--products-card,
   .products-card:hover .btn--products-card {
     width: calc(100% - 12px);
   }
@@ -2457,7 +2457,7 @@ button,
     padding: 0 16px;
   }
 
-  .products-card:focus .btn--products-card,
+  .products-card:focus-within .btn--products-card,
   .products-card:hover .btn--products-card {
     width: calc(100% - 2px);
   }
@@ -2786,7 +2786,7 @@ button,
     margin-bottom: 6.3%;
   }
 
-  .products-card:focus .products-card__list,
+  .products-card:focus-within .products-card__list,
   .products-card:hover .products-card__list {
     margin-bottom: 10.3%;
   }
